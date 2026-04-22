@@ -1,0 +1,46 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.16",
+    "version": "1.0.0",
+    "id": "<ID>",
+    "packageName": "com.microsoft.teams.extension",
+    "developer": {
+        "name": "AuxData Space GmbH",
+        "websiteUrl": "https://www.auxdata.ai",
+        "privacyUrl": "https://www.auxdata.ai/gdpr.html",
+        "termsOfUseUrl": "https://www.auxdata.ai/nutzungsbedingungen.pdf"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "name": {
+        "short": "Auxy Bot",
+        "full": "Auxy AuxData.ai Global Bot"
+    },
+    "description": {
+        "short": "AuxData Chatbot",
+        "full": "Auxy der globale Chatbot von AuxData.ai"
+    }, 
+    "accentColor": "#FFFFFF",
+    "bots": [
+        {
+            "botId": "<ID>",
+            "scopes": [
+                "personal",
+                "team",
+                "groupchat"
+            ],
+            "supportsFiles": true,
+            "isNotificationOnly": false
+        }
+    ],
+    "composeExtensions": [],
+    "configurableTabs": [],
+    "staticTabs": [],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": []
+}
